@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="center">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <ul>
+                    <li> <a href="Home.html">Home</a></li>
+                    <li> <a href="About.html">About</a></li>
+                    <li> <a href="Department.html">Department</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <label for="Speech Recognition "></label>
+                    <input type="text" name="" id="speech" placeholder="Search here" onclick=record()> <br>
+                    <button class="btn">Search</button>
+                </div>
+                <script>
+                    function record() {
+                        var speak = new webkitSpeechRecognition();
+                        speak.lang = "en-GB";
+
+                        speak.onresult = function (event) {
+                            console.log(event);
+                            document.getElementById('speech').value = event.results[0][0].transcript;
+                        }
+                        speak.start();
+                    }
+                </script>
+                <p class="m1"><i class="bi bi-gear-wide-connected"></i></p>
+                <p class="m2"><i class="bi bi-question-circle"></i></p>
+                <div class="icon">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="slides"></div>
+    <div class="side-bar">
+        <div class="icons"><i class="bi bi-list"></i></div>
+        <div class="icon1">
+            <ul>
+                <li> <i class="bi bi-house"></i></li>
+                <li> <i class="bi bi-book"></i></li>
+                <li> <i class="bi bi-bell"></i></li>
+                <li> <i class="bi bi-graph-up-arrow"></i></li>
+                <li> <i class="bi bi-bookmarks-fill"></i></li>
+                <li> <i class="bi bi-person-plus"></i></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/random/1200×500/?shopping, ecommerse" alt="" width="1200px"
+                    height="600px">
+            </div>
+            <div class="box">
+                <!-- <h3>Share !</h3> <br> -->
+                <div class="icon2">
+                    <ul>
+                        <li>
+                            <h3>Share !</h3>
+                        </li>
+                        <li class="aa"><i class="bi bi-whatsapp"></i></li>
+                        <li class="tt"><i class="bi bi-facebook"></i></li>
+                        <li class="bb"><i class="bi bi-instagram"></i></li>
+                        <li class="cc"><i class="bi bi-github"></i></li>
+                        <li class="dd"><i class="bi bi-twitter"></i></li>
+                        <li class="ee"><i class="bi bi-linkedin"></i></li>
+                        <li class="ff"><i class="bi bi-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-1">See the some Electronics device -</h2>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?electric,led" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Electric device</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?electric,mobiles" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Electric device</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?electric,laptop" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Electric device</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?electric,solor" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Electric device</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?electric,sensor" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Electric device</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="card">
+                <h2 class="my-1">Join the cricket fun -</h2>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?cricket,umpayer" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Cricket Bats</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?cricket,stadium" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Cricket Bats</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?cricket,rohit" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Cricket Bats</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?cricket,ball" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Cricket Bats</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?cricket,ground" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Cricket Bats</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="card">
+                <h2 class="my-1">See the beauty of nature -</h2>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?nature, hills" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Nature pic</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?nature, lake" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Nature pic</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?nature,river" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Nature pic</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?nature,water" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Nature pic</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://source.unsplash.com/random/160×160/?nature, forest" alt="" width="190px"
+                        height="190px">
+                    <div class="lines">
+                        <p class="item">Nature pic</p>
+                        <p class="item">Min 20% off</p>
+                        <p class="item">Grab Now!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <h2 class="my-1">Beauty of different type of ocean -</h2>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/random/160×160/?ocean" alt="" width="190px" height="190px">
+                <div class="lines">
+                    <p class="item">Ocean picture</p>
+                    <p class="item">Min 30% off</p>
+                    <p class="item">Grab Now!</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/random/160×160/?ocean,blue" alt="" width="190px" height="190px">
+                <div class="lines">
+                    <p class="item">Ocean picture</p>
+                    <p class="item">Min 30% off</p>
+                    <p class="item">Grab Now!</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/random/160×160/?ocean,tsunami" alt="" width="190px"
+                    height="190px">
+                <div class="lines">
+                    <p class="item">Ocean picture</p>
+                    <p class="item">Min 30% off</p>
+                    <p class="item">Grab Now!</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/random/160×160/?ocean,flow" alt="" width="190px" height="190px">
+                <div class="lines">
+                    <p class="item">Ocean picture</p>
+                    <p class="item">Min 30% off</p>
+                    <p class="item">Grab Now!</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/random/160×160/?ocean,power" alt="" width="190px" height="190px">
+                <div class="lines">
+                    <p class="item">Ocean picture</p>
+                    <p class="item">Min 30% off</p>
+                    <p class="item">Grab Now!</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main><br>
+    <hr>
+    <div class="login">
+        <p> Hello Namste 🙏🤗
+            <br>
+            If you don't have any account on flipkart you can login here. so that know very well about that page. <br>
+            Thankyou.
+        </p>
+    </div>
+    <div class="input">
+        <input type="button" value="Click Here!" name="" id="">
+    </div>
+    <!-- <div class="bottom">
+        <label for="">Write Your Query :- </label>
+        <textarea name="text" id="" cols="90" rows="5" placeholder="What type of product you want please write in detail so that we will help you as soon as possible. 
+   Thankyou "></textarea>
+
+        <input type="submit" name="button" id="tt">
+        <form action="">
+            <label for="text"> First Name :- </label>
+            <input type="text" name="" placeholder="Enter your first name" id=""> <br>
+            <label for="text">Last Name :- </label>
+            <input type="text" name="" id="" placeholder="Enter your last name"><br>
+            <label for="email"> Email Id :- </label>
+            <input type="email" name="" id="" placeholder=" Enter your valid email id"><br>
+            <button class="button">Login Here</button>
+        </form>
+    </div> -->
+
+    <br>
+    <footer class="flex-all-center">
+        <p>Copyright &copy;All right reserved by Sourya </p>
+    </footer>
+
+</body>
+
+</html>
